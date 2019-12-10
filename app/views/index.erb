@@ -1,4 +1,9 @@
-<% @articles.each do |article|
-  href="/articles/<%= article.id %>">
-      <%= article.title %> 
-<%end%>
+<ul>
+<% @articles.each do |article| %>
+  <li>
+    <a href="/articles/<%= article.id %>">
+      <%= article.title %>
+    </a>
+  </li>
+<% end %>
+</ul>
